@@ -10,7 +10,7 @@ jobs:
     - name: vuepress-deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
-        GITHUB_TOKEN: ${{ secrets.BLOG_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.BLOG_TOKEN }}
         TARGET_REPO: elmojj/vp-blog
         TARGET_BRANCH: master
         BUILD_SCRIPT: yarn && yarn docs:build
