@@ -12,7 +12,7 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.BLOG_TOKEN }}
         TARGET_REPO: elmojj/vp-blog
-        TARGET_BRANCH: master
+        TARGET_BRANCH: index
         BUILD_SCRIPT: yarn && yarn docs:build
         BUILD_DIR: docs/.vuepress/dist
         CNAME: https://www.xxx.com
