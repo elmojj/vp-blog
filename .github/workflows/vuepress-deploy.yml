@@ -11,8 +11,8 @@ jobs:
       uses: jenkey2011/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.BLOG_TOKEN }}
-        TARGET_REPO: elmojj/vp-blog
-        TARGET_BRANCH: index
+        TARGET_REPO: elmojj/elmojj.github.io
+        TARGET_BRANCH: master
         BUILD_SCRIPT: yarn && yarn docs:build
         BUILD_DIR: docs/.vuepress/dist
-        CNAME: https://www.xxx.com
+        CNAME: http://elmojj.github.io
